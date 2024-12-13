@@ -1,0 +1,77 @@
+/* General reset */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(45deg, #9ac2ff, #dcc4fa);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Center and style the container */
+#box {
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Input fields styling */
+form input[type="text"],
+form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #e0e0e0;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+/* Highlight input fields on focus */
+form input[type="text"]:focus,
+form input[type="password"]:focus {
+  border-color: #ff6f61;
+  outline: none;
+  box-shadow: 0 0 8px rgba(255, 111, 97, 0.3);
+}
+
+/* Button styling */
+form button {
+  background: #ff6f61;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+form button:hover {
+  background: #e64a45;
+  box-shadow: 0 5px 15px rgba(230, 74, 69, 0.3);
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  #box {
+    padding: 20px;
+  }
+
+  form input[type="text"],
+  form input[type="password"] {
+    font-size: 14px;
+  }
+
+  form button {
+    font-size: 16px;
+  }
+}
